@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ - 今日の運勢</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>おみくじ</h1>
+        <p class="subtitle">今日の運勢を占いましょう</p>
+
+        <div id="omikuji-box" class="omikuji-box">
+            <div id="result" class="result hidden">
+                <div id="fortune-level" class="fortune-level"></div>
+                <div id="fortune-message" class="fortune-message"></div>
+                <div id="fortune-details" class="fortune-details"></div>
+            </div>
+        </div>
+
+        <button id="draw-btn" class="draw-btn" onclick="drawOmikuji()">おみくじを引く</button>
+        <button id="reset-btn" class="reset-btn hidden" onclick="resetOmikuji()">もう一度引く</button>
+    </div>
+
+    <script src="fortunes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
